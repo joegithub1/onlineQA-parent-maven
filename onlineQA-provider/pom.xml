@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.hj</groupId>
+    <artifactId>onlineQA-parent</artifactId> 
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.hj</groupId>
+  <artifactId>onlineQA-provider</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>onlineQA-provider</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.0.4.RELEASE</spring.version>  
+    <!-- <mysql-connector-java.version>5.1.34</mysql-connector-java.version> -->  
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+	    <groupId>cn.com</groupId>
+	  	<artifactId>onlineQA-interface</artifactId>
+	  	<version>0.0.1-SNAPSHOT</version>
+	  	<scope>test</scope>
+    </dependency>
+    
+    <dependency>
+     <groupId>com.alibaba</groupId> 
+     <artifactId>dubbo</artifactId>
+     <version>2.5.3</version>
+ 	</dependency>
+ 	
+	 <dependency>
+	    <groupId>org.apache.zookeeper</groupId>
+	    <artifactId>zookeeper</artifactId>
+	    <version>3.4.10</version>
+	 </dependency> 	
+ 	
+ 	 <dependency>  
+        <groupId>org.springframework</groupId>  
+        <artifactId>spring-context</artifactId>  
+        <version>${spring.version}</version>  
+    </dependency>  
+ 	
+ 	
+ 	
+ 	<!-- log begin -->  
+        <dependency>  
+            <groupId>commons-logging</groupId>  
+            <artifactId>commons-logging</artifactId>  
+            <version>1.1.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>log4j</groupId>  
+            <artifactId>log4j</artifactId>  
+            <version>1.2.15</version>  
+            <exclusions>  
+                <exclusion>  
+                    <groupId>com.sun.jdmk</groupId>  
+                    <artifactId>jmxtools</artifactId>  
+                </exclusion>  
+                <exclusion>  
+                    <groupId>com.sun.jmx</groupId>  
+                    <artifactId>jmxri</artifactId>  
+                </exclusion>  
+                <exclusion>  
+                    <artifactId>jms</artifactId>  
+                    <groupId>javax.jms</groupId>  
+                </exclusion>  
+                <exclusion>  
+                    <artifactId>mail</artifactId>  
+                    <groupId>javax.mail</groupId>  
+                </exclusion>  
+            </exclusions>  
+        </dependency>  
+        <!-- log end -->
+ 	
+ 	
+ 	
+ 	
+  </dependencies>
+</project>
